@@ -41,7 +41,7 @@ wss.on('connection', (ws) => {
         console.log('onMessage: ', message)
         //{type: <TYPE>, payload: <MESSAGE>}
         let json = JSON.parse(message)
-        yellMessage(message)
+        yellMessage(json)
     });
 });
 
